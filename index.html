@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workforce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="hamburger">
+            <i class="fa-solid fa-bars" data-visible="true"></i>
+            <i class="fa-solid fa-close" data-visible="false"></i>
+        </div>
+        <nav class="menus">
+            <div class="logo">
+                <h1>Workforce</h1>
+            </div>
+            <ul class="menu-link">
+                <li style="color: #55ace5;"><a href="#section"></a>HOME</li>
+                <li><a href=""></a>SERVICES</li>
+                <li><a href=""></a>ABOUT</li>
+                <li><a href=""></a>PORTOFOLIO</li>
+                <li><a href=""></a>CONTACT</li>
+            </ul>
+        </nav>
+        <!-- Mobile menu -->
+         <div class="mobile-menu" data-visible="false">
+            <ul class="menu-links">
+                <li style="color: #55ace5;"><a href=""></a>HOME</li>
+                <li><a href=""></a>SERVICES</li>
+                <li><a href=""></a>ABOUT</li>
+                <li><a href=""></a>PORTOFOLIO</li>
+                <li><a href=""></a>CONTACT</li>
+            </ul>
+         </div>
+    </header>
+
+    <section id="section">
+        <div class="overlay">
+            <img src="./img/1.jpg" alt="">
+            <div class="slides">
+                <h1>WEB DESIGN AND DEVELOPMENT</h1>
+                <h2>DIGITAL STUDIO</h2>
+                <h3>WEB, MOBILE, UX DESIGN</h3>
+            </div>
+            <button class="btn">LEARN MORE</button>
+        </div> 
+
+    </section>
+
+
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    const hamburger = document.querySelector('.hamburger')
+    const mobileMenu = document.querySelector('.mobile-menu')
+    const icons = document.querySelectorAll('.i')
+
+     hamburger.addEventListener('click', function(event) {
+        const isVisible = mobileMenu.getAttribute('data-visible')
+        if (isVisible == "true"){
+            mobileMenu.setAttribute('data-visible', "false")
+            icons[0].setAttribute('data-visible', "true")
+            icons[1].setAttribute('data-visible', "false")
+        }else if (isVisible == "false"){
+            mobileMenu.setAttribute('data-visible', "true")
+            icons[0].setAttribute('data-visible', "false")
+            icons[1].setAttribute('data-visible', "true")
+        }
+     })
+</script>
+
+
+</body>
+</html>
