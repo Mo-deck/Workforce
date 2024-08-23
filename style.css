@@ -290,8 +290,54 @@ img{
     margin-bottom: 10px;
 }
 
+#portofolia{
+    margin-top: 30%;
+}
+
+#portofolia h1, p{
+    text-align: center;
+}
+
+.ul{
+    display: flex;
+    list-style-type: none;
+   justify-content: center;
+   margin-top: 40px;
+   gap: 20px;
+}
+
+.ul li{
+    border: 1px solid #f2f2f2;
+    color: #999;
+    padding: 8px 17px;
+    display: block;
+    text-decoration: none;
+}
+
+.ul li:hover{
+    cursor: pointer;
+    background: #55ace5;
+    color: #fff;
+}
+
+.portof{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 50px;
+    margin-inline: 10px;
+    margin-block: 10px;
+}
 
 
+.portof img{
+width: 50%;
+height: 50%;
+}
+
+.port{
+    display: flex;
+    flex-direction: column;
+}
 
 
 
@@ -514,6 +560,19 @@ img{
 
 .grids{
     grid-template-columns: 1fr;
+}
+
+#portofolia{
+    margin-top: 220%;
+}
+
+.portof{
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+}
+
+.portof img{
+    width: 100%;
 }
    
 }
